@@ -9,9 +9,9 @@ import { TodoComponent }   from './todo/todo.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'pokemon', pathMatch:'full'},
-  { path: 'LearnAngular/search', component: SearchComponent },
-  { path: 'LearnAngular/pokemon', component: PokemonComponent },
-  { path: 'LearnAngular/todo', component: TodoComponent }
+  { path: 'search', component: SearchComponent },
+  { path: 'pokemon', component: PokemonComponent },
+  { path: 'todo', component: TodoComponent }
 ];
 
 @NgModule({
