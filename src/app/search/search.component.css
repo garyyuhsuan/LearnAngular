@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+*, *:after, *:before{
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+}
+
+
+.hero-title{
+
+    text-align: center;
+
+    padding: 48px 0;
+
+    font-size: 32px;
+    font-weight: 800;
+
+}
+
+.wrapper{
+    width: 96%;
+
+    margin: auto;
+}
+
+.search{
+
+    margin: auto;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+
+.search-input{
+    margin-right: 24px;
+
+}
+
+.search-input input{
+    padding: 8px;
+    margin-right: 12px;
+    font-size: 16px;
+
+    text-align: center;
+
+    border-radius: 0px;
+    border: none;
+    background-color: rgba(30, 30, 30, 0.1);
+
+
+    
+}
+
+.search-input button{
+
+    padding: 8px;
+
+    font-size: 16px;
+
+    border: none;
+    box-shadow: none;
+
+    background-color: #000;
+    color: #fff;
+
+    
+}
+
+@media (max-width: 540px){
+
+    .search{
+        flex-direction: column;
+
+        
+    }
+
+    .search-input{
+        margin: 0;
+
+        width: 100%;
+    
+    }
+
+    .search-input input{
+
+        padding-right: 0px;
+        padding-left: 0px;
+
+        margin: 8px 0;
+        width: 100%;
+        
+    }
+    
+    .search-input button{
+
+        margin: 8px 0;
+        width: 100%;
+    
+    }
+
+    .search-title{
+        text-align: center;
+    }
+
+
+    
+}
+
+
+.container{
+
+    
+
+    width: 100%;
+    /* margin: 0 auto; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+
+    
+
+}
+
+.search-none{
+    margin-right: auto;
+
+    font-size: 20px;
+    padding: 12px 20px;
+
+
+}
+
+
+
+.box-index{
+    padding: 32px;
+    /* margin: auto; */
+    margin-bottom: 20px;
+
+    width:16%;
+    /* height: 280px; */
+
+    border: 2px solid;
+    border-color: rgba(30, 30, 30, 0.2);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .box-index{
+        
+        width:30%;
+        
+    }
+}
+
+@media (max-width: 425px){
+    .box-index{
+        
+        width:100%;
+        
+    }
+}
+
+
+
+.image-index{
+    width: 100%;
+    
+    margin: 12px 0 20px 0;
+    
+}
+
+.type-index{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.type-index span{
+    padding: 8px 12px;
+    margin: 0 4px;
+
+    background-color: #DFDFDE;
+    color: #313552;
+
+    border-radius: 4px;
+
+    
+}

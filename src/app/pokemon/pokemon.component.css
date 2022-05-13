@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+*, *:after, *:before{
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+}
+
+
+
+.hero-title{
+
+    text-align: center;
+
+    padding: 48px 0;
+
+    font-size: 32px;
+    font-weight: 800;
+
+}
+
+
+.pokemonLottery{
+
+    padding: 32px;
+    margin: auto;
+    margin-bottom: 100px;
+
+    width: 40%;
+
+    border: 2px solid;
+    border-color: rgba(30, 30, 30, 0.2);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.bar-counter{
+    padding: 8px;
+
+    
+
+}
+
+/* .caption-counter{
+
+    padding-top: 12px;
+    
+} */
+
+.bar-name{
+    padding: 8px;
+
+    display: flex;
+}
+
+.item-name{
+    margin: 8px;
+    font-size: 24px;
+}
+
+.image-sm{
+    width: 100%;
+}
+
+.btn-counter{
+
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+
+    font-size: 20px;
+}

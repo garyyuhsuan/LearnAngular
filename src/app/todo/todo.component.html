@@ -1,0 +1,37 @@
+<!-- <div class="hero-title">
+    <span>{{title}}</span>
+</div> -->
+
+<div class="wrapper">
+
+    <div class="topBar">
+        <div class="topBar__title">TODO</div>
+        <div class="topBar__leftTodo">待辦：{{todoNumber}}</div>
+    </div>
+
+    <div class="midBar">
+        <div class="midBar__doneTodo">已完成：{{doneNumber}}</div>
+    </div>
+
+    <div class="todo-list" >
+
+        <div class="todo-list__item" *ngIf="showAdd" >
+
+            <input type="text" [(ngModel)]="taskString" placeholder="請輸入待辦事項">
+            <div class="todo-list__item--saved" (click)="saveTask()" >新增</div>
+        
+        </div>
+
+        <div class="todo-savedlist" *ngIf="todolist.length>=1">
+
+            <div class="todo-list__item" *ngFor="let task of todolist; let i = index">
+                <input type="checkbox" class="todo-list__item--checked" (click)="finishTask(i)">
+                <div class="todo-list__item__description" >{{task.Content}}</div>
+                <div class="todo-list__item--deleted" (click)="deleteTask(i)">刪除</div>
+            </div>
+    
+        </div>
+
+    </div>
+</div>
+

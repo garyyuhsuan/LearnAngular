@@ -1,0 +1,28 @@
+
+<div class="hero-title">
+    <span>{{title}}</span>
+
+</div>
+
+<div class="pokemonLottery">
+
+    
+
+    <div class="bar-name">
+
+        <p class="item-name">{{pokemonlists[showPokemonID].ChineseName}}</p>
+        <p class="item-name">{{pokemonlists[showPokemonID].EnglishName}}</p>
+
+    </div>
+    
+    <img class="image-sm" [src]="pokemonlists[showPokemonID].Img" alt="">
+
+    <button class="btn-counter" (click)="ChangeValue(true)">出來吧～</button>
+    
+    <div class="bar-counter">
+
+        <span class="caption-counter">遊戲次數：{{gameCounter}}</span>
+        
+    </div>
+
+</div>

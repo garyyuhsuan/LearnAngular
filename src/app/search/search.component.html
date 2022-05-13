@@ -1,0 +1,43 @@
+
+<div class="hero-title">
+    <span>{{title}}</span>
+
+</div>
+
+<div class="wrapper">
+
+    <div class="search">
+
+        <div class="search-input">
+            <!-- <label for="NameInput">查詢   </label> -->
+            <!-- <input type="text" name="NameInput" [(ngModel)]="searchingStr" placeholder="請輸入"> -->
+            <input type="text" [(ngModel)]="searchingStr" placeholder="請輸入">
+            <button (click)="search()">搜尋</button>
+        </div>
+    
+        <div class="search-title">總數：{{pokemonlists.length}}</div>
+
+    </div>
+
+    
+
+    <div class="container">
+
+            <div class="search-none" *ngIf="!pokemonlists.length">無符合搜尋條件的資料</div>
+
+        
+            <div class="box-index" *ngFor="let item of pokemonlists">
+                <div class="name-index">{{item.ChineseName}} {{item.EnglishName}}</div>
+                <img class="image-index" [src]="item.Img" alt="">
+                <div  class="type-index" >
+                    <span *ngFor="let tp of item.Types">{{tp.Name}}</span>
+                </div>
+                
+            </div>
+        
+
+        
+
+    </div>
+
+</div>
